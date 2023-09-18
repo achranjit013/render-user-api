@@ -41,15 +41,21 @@
         <div class="row g-2">
           <div class="col-md-8">
             <input
+              id="search"
               type="text"
-              class="form-control"
+              class="form-control user-name"
               placeholder="search by name"
             />
           </div>
           <div class="col-md text-end">
-            <select name="" id="" class="form-control">
+            <select
+              name=""
+              id=""
+              class="form-control"
+              onchange="handleOnGenderSelect(this)"
+            >
               <option value="">--- Select Gender ---</option>
-              <option value="male">male</option>
+              <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
           </div>
@@ -59,128 +65,14 @@
         <div class="row mt-5">
           <div class="col">
             <p>
-              <span class="count">10</span>
+              <span class="count"></span>
               User (s) found!
             </p>
 
             <div
               id="list"
               class="d-flex flex-wrap justify-content-between gap-2"
-            >
-              <div class="card flex-grow-1" style="width: 18rem">
-                <img
-                  src="https://randomuser.me/api/portraits/men/36.jpg"
-                  class="card-img-top"
-                  alt="users image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">User Name</h5>
-                  <div class="card-list">
-                    <ul>
-                      <li>phone</li>
-                      <li>email</li>
-                      <li>address</li>
-                      <li>gender</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card flex-grow-1" style="width: 18rem">
-                <img
-                  src="https://randomuser.me/api/portraits/men/36.jpg"
-                  class="card-img-top"
-                  alt="users image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">User Name</h5>
-                  <div class="card-list">
-                    <ul>
-                      <li>phone</li>
-                      <li>email</li>
-                      <li>address</li>
-                      <li>gender</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card flex-grow-1" style="width: 18rem">
-                <img
-                  src="https://randomuser.me/api/portraits/men/36.jpg"
-                  class="card-img-top"
-                  alt="users image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">User Name</h5>
-                  <div class="card-list">
-                    <ul>
-                      <li>phone</li>
-                      <li>email</li>
-                      <li>address</li>
-                      <li>gender</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card flex-grow-1" style="width: 18rem">
-                <img
-                  src="https://randomuser.me/api/portraits/men/36.jpg"
-                  class="card-img-top"
-                  alt="users image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">User Name</h5>
-                  <div class="card-list">
-                    <ul>
-                      <li>phone</li>
-                      <li>email</li>
-                      <li>address</li>
-                      <li>gender</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card flex-grow-1" style="width: 18rem">
-                <img
-                  src="https://randomuser.me/api/portraits/men/36.jpg"
-                  class="card-img-top"
-                  alt="users image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">User Name</h5>
-                  <div class="card-list">
-                    <ul>
-                      <li>phone</li>
-                      <li>email</li>
-                      <li>address</li>
-                      <li>gender</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card flex-grow-1" style="width: 18rem">
-                <img
-                  src="https://randomuser.me/api/portraits/men/36.jpg"
-                  class="card-img-top"
-                  alt="users image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">User Name</h5>
-                  <div class="card-list">
-                    <ul>
-                      <li>phone</li>
-                      <li>email</li>
-                      <li>address</li>
-                      <li>gender</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ></div>
           </div>
         </div>
       </div>
